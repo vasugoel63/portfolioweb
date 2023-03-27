@@ -1,0 +1,642 @@
+/* Header section */
+/* @import url("https://fonts.google.com/specimen/Baloo+Paaji+2 "); */
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&family=Open+Sans&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&display=swap');  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@900&family=Open+Sans:ital,wght@0,400;1,300&display=swap'); */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* header section */
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Baloo Paaji 2', cursive;
+    padding: 23px;
+    position: relative;
+    align-items: center;
+   
+
+}
+.main-sec{
+    height: 85vh;
+    position: relative;
+    background-image: url(images/header.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-attachment: fixed; */
+    /* background-blend-mode: normal; */
+    /* background-blend-mode: saturation; */
+    
+
+}
+
+.main-sec .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to top,#fff 0,rgba(105,90,166,.35) 99%,rgba(105,90,166,.5) 100%);
+    width: 100%;
+    height: 100%;
+}
+h1,h2,h3,h4,h5 {
+    font-family: 'Baloo Paaji 2', cursive;
+}
+header .logo{
+    font-size: larger;
+    margin-left: 25px ;
+    color: white;
+    
+}
+header .logo h2{
+    font-weight: 1000;
+    font-size: 40px;
+    /* z-index: 1; */
+    /* position: absolute; */
+}
+ul{
+    display: flex;
+    /* float: right; */
+    /* z-index: 1; */
+    /* position: relative */
+}
+ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 12px;
+    color: white;
+    font-weight: 1000;
+    /* z-index: 1; */
+    font-family: 'Baloo Paaji 2';
+    font-size: 25px;
+}
+header ul li a:hover:not(.component){
+    color: blueviolet;
+    cursor: pointer;
+    /* z-index: 1;
+    position: relative; */
+}
+header ul li a .component{
+    background-color: blueviolet;
+}
+
+header .bars{
+    display: none;
+}
+/* header::before{
+    content: "";
+    background: url(images/header.jpg);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 70%;
+    z-index: -1;
+    opacity: 0.7;
+} */
+
+
+.sub-head{
+    color: blueviolet;
+    font-weight:1000;
+    padding-bottom: 40px;
+    font-size: 35px;
+}
+.main-head{
+    opacity: 0.5;
+    font-size: 15px;
+    /* padding-bottom: 4px; */
+}
+
+.first-section{
+    display: flex;
+    justify-content: center;
+}
+ .text-section{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: flex-start;
+    /* align-items: center; */
+    padding: 30px;
+}
+
+.text-section h1{
+    font-size: 70px;  
+    opacity: 0.5;
+    z-index: 1;
+}
+.text-section h2{
+    font-size: 70px; 
+    z-index: 1; 
+    opacity: 0.7;
+}
+.text-section p{
+    font-size: 20px; 
+    letter-spacing: 8px; 
+    z-index: 1
+}
+
+.text-section .text-button{
+    margin-top: 30px;
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 17px;
+    border-style: none;
+}
+.text-section .text-button:hover{
+    cursor: pointer;
+}
+
+/* About section */
+.about-section{
+    display: flex;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.image-section{
+    flex: 2.5;
+}
+.image-section img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+.about-text-section { 
+    flex: 4;
+}
+
+
+#about-text{
+    /* text-align: justify; */
+}
+
+.about-section .CVbtn{
+    padding: 10px;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+.about-section .CVbtn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: blueviolet;
+}
+
+
+/* services section */
+.services-heading{
+    text-align: center;
+}
+
+.card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    padding-top: 50px;
+    padding-bottom: 70px;
+    border: 1px solid rgb(226, 224, 224) ;
+    margin: 16px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .card-head{
+    color: blueviolet;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.first-section,.about-section,.services-section, .portfolio-section,.charge-section,.break-section, .portfolio-section , .contact-section
+, .blog-section{
+    margin-bottom: 60px;
+}
+
+
+/* portfolio section starts here */
+.portfolio-head{
+    text-align: center;
+}
+
+.p-image-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+.p-card{
+    width: 30%;
+    margin: 10px;
+}
+
+.p-card img{
+    max-width: 100%;
+}
+
+/* Charge section comes here */
+.charge-head{
+    text-align: center;
+}
+.plan-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+.plan-card{
+    padding: 10px 0px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-1{
+    border-width: 2px 1px 2px 2px;
+    border-color: rgb(226, 224, 224);
+    border-style: solid;
+}
+.card-2{
+    border-width: 2px 1px 2px 1px;
+    border-color: rgb(226, 224, 224);
+    border-style: solid;
+}
+.card-3{
+    border-width: 2px 2px 2px 1px;
+    border-color: rgb(226, 224, 224);
+    border-style: solid;
+}
+.plan-card p{
+    text-align: center;
+    line-height: 35px;
+    opacity: 0.7;
+}
+.plan-card p .price{
+    color: black;
+    font-size: 32px;
+    font-style: bold;
+}
+
+.plan-card .price{
+    font-size: larger;
+    color: black;
+}
+.plan-card .sub-btn{
+    background-color: blueviolet;
+    color: white;
+    padding: 7px;
+    border-style: none;
+    margin: 15px;
+
+}
+
+.break-section{
+    background-color: blueviolet;
+    padding: 40px 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.break-content{
+    /* float: left; */
+    color: white;
+}
+.hire-btn{
+    font-family: 'Baloo Paaji 2', cursive;
+    padding: 5px 12px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.hire-btn:hover{
+    cursor: pointer;
+}
+
+
+/* testimonal section */
+.testimonal-section {
+    margin: 30px 20px 30px 40px;
+}
+.testimonal-head{
+    text-align: center;
+}
+
+.t-card-section{
+    display: flex;
+    justify-content: center;
+}
+.t-card{
+    border: 2px solid rgb(226, 224, 224);
+    width: 40%;
+    margin: 35px;
+    padding: 20px;
+    padding-left: 53px;
+    position: relative;
+}
+
+
+.t-card img{
+    border-radius: 50%;
+    height: 75px;
+    position: absolute;
+    top: 42px;
+    left: -40px;
+}
+
+
+.t-card-name{
+    margin-top: 20px;
+    color: blueviolet;
+}
+
+/* blog section  */
+
+.blog-p-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.blog-card-data{
+    display: flex;
+    border: 2px solid rgb(226, 224, 224);
+    margin: 20px;
+}
+.blog-card-img{
+    width: 25%;
+}
+.blog-card-details{
+    width: 75%;
+}
+
+.blog-card-details{
+    padding: 25px;
+}
+.blog-sub-head{
+    padding: 10px 0;
+}
+
+.form-section{
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+.contact-head{
+    padding-bottom: 10px !important;
+}
+
+.form-section .grid-container > input{
+    padding: 5px 60px 5px 5px;
+    /* border: 2px solid #b2bec3; */
+    border: 1px solid rgb(226, 224, 224) ;
+}
+.form-section .grid-container textarea{
+    height: 150px;
+    padding: 12px 20px;
+    resize: none;
+    border: 1px solid rgb(226, 224, 224) ;
+}
+
+.readbtn{
+    padding-top: 15px;
+    color: blueviolet;
+    font-size: 14px;
+
+}
+.readbtn:hover{
+    cursor: pointer;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    gap: 10px; 
+    margin: auto;
+}
+
+.grid-item-3{
+    grid-column: 1 / span 2;
+}
+
+.msgBtn{
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    padding: 5px;
+    margin: 20px;
+
+}
+
+.msgBtn:hover{
+    color: white;
+    background-color: blueviolet;
+    cursor: pointer;
+}
+.hr-div{
+    display: flex;
+    justify-content: center;
+}
+
+
+    /* Footer section starts here */
+footer{
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+}
+
+footer .footer-data, .symbols{
+    /* margin: 10px; */
+}
+
+footer .symbols i{
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 1024px){
+    .navbar li a{
+        font-size: 15px;
+    }
+    header .logo h2{
+        font-size: 25px;
+    }
+
+     .blog-card-img{
+        width: 100%;
+    }
+    .blog-card-details{
+        width: 100%;
+    }
+    
+     .blog-card-data{
+        display: flex;
+        flex-direction: column;
+     }
+
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        display: none;
+    }
+    header .bars{
+        display: block;
+    }
+    header .bars i{
+        color: white;
+        font-size: 35px;
+    }
+    header .bars i:hover{
+        /* color: blueviolet; */
+        cursor: pointer;
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .about-section .image-section img{
+        margin-bottom: 40px;
+    }
+    .services-section .card-section{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 60%;
+    }
+    .p-image-section{
+        flex-direction: column;
+    }
+    .p-card{
+        width: 60%;
+    }
+
+ 
+
+    .plan-section{
+        flex-direction: column;
+    }
+    .plan-card{
+        width: 80%;
+    }
+    .card-1{
+        border-width: 2px 2px 1px 2px;
+    }
+    .card-2{
+        border-width: 1px 2px 1px 2px;
+        border-color: rgb(226, 224, 224);
+        border-style: solid;
+    }
+    .card-3{
+        border-width: 1px 2px 2px 2px;
+        border-color: rgb(226, 224, 224);
+        border-style: solid;
+    }
+    .t-card-section{
+        flex-direction: column;
+    }
+    .t-card {
+        width: 90%;
+        margin: 20px
+    }
+    .break-section{
+        padding: 20px 0;
+    }
+    .hire-btn {
+        padding: 2px 5px;
+        font-size: 15px;
+    }
+    .form-section .grid-container > input{
+        padding: 9px 2px;
+    } 
+    .main-footer{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .footer-data{
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .image-section img {
+        height: 350px;
+    }
+    .about-section .image-section img {
+        margin-bottom: 20px;
+    }
+   
+    .sub-head{
+        font-size: 25px;
+    }
+    .text-section h1{
+        font-size: 40px;  
+    }
+    .text-section h2{
+        font-size: 40px; 
+    }
+    .text-section p{
+        font-size: 10px; 
+    }
+    .main-sec{
+        height: 60vh;
+    }
+    .break-section {
+        padding: 29px;
+    }
+    .hire-btn {
+        padding: 2px 8px;
+    }
+    .sub-head{
+        padding-bottom: 20px;
+    }
+    .blog-p-section{
+        margin: 0;
+    }
+    .form-section .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .form-section .grid-container > input {
+        padding: 5px 13px;
+    }
+    .first-section,.about-section,.services-section, .portfolio-section,.charge-section,.break-section, .portfolio-section , .contact-section
+, .blog-section{
+    margin-bottom: 40px;
+}
+
+}
